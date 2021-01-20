@@ -1,0 +1,673 @@
+/*
+* General
+*---------------------------------------------------------------------------------------------------
+*/
+@font-face {
+  font-family: "icomoon";
+  src: url("../../fonts/icomoon.eot?s7gk0n");
+  src: url("../../fonts/icomoon.eot?s7gk0n#iefix") format("embedded-opentype"),
+    url("../../fonts/icomoon.ttf?s7gk0n") format("truetype"),
+    url(".././fonts/icomoon.woff?s7gk0n") format("woff"),
+    url("../../fonts/icomoon.svg?s7gk0n#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class*="social"] {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.icon-social-twitter:before {
+  /*This is a class*/
+  content: "\e900";
+}
+.icon-social-github:before {
+  content: "\e901";
+}
+.icon-social-instagram:before {
+  content: "\e902";
+}
+.icon-social-facebook:before {
+  content: "\e903";
+}
+.icon-menu:before {
+  content: "\e904";
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: cursive, sans-serif; /*(yes ","and not "-")*/
+}
+* {
+  /*i think that this isn´t a good practice */
+  margin: 0;
+  padding: 0;
+}
+
+.burger-menu {
+  display: none;
+}
+
+/*
+* Container
+*---------------------------------------------------------------------------------------------------
+*/
+body {
+  padding: 50px;
+  background-color: #5a3cff;
+  display: flex;
+  justify-content: center;
+  /* max-width: 100vw; */
+}
+
+.document-container-down {
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 1200px;
+}
+.container {
+  max-width: inherit;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  width: 100%;
+}
+
+/*
+*  Header
+*---------------------------------------------------------------------------------------------------
+*/
+.header {
+  background-color: rgb(0, 0, 0);
+  height: 100px;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 30px;
+}
+
+header ol li .link-border {
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+/* #header-logo {
+} */
+
+ol {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  margin-right: 1px;
+}
+li {
+  justify-content: space-between;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  flex-wrap: nowrap;
+}
+.link:hover,
+.link-border:hover {
+  /*This is for to change the background color when put the mouse above button*/
+  background-color: rgba(197, 197, 197, 0.233);
+}
+
+/*
+*  Hero
+*---------------------------------------------------------------------------------------------------
+*/
+h1 {
+  text-align: center;
+  align-items: center;
+  font-size: 2.5em;
+  color: white;
+  line-height: 44px;
+  text-shadow: 1px 2px 1px black;
+  margin: 20px 20px;
+  text-transform: capitalize;
+}
+
+.hero {
+  background-color: rgb(54, 54, 54);
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
+.hero-photo {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px 0px #000;
+}
+.hero-photo-wrapper {
+  height: inherit;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 4px 0px 18px 0px black;
+}
+.hero-tittle-box {
+  height: inherit;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-tittle-two {
+  text-align: center;
+  background-color: #cccccc;
+  font-size: 1.3em;
+  font-weight: 100;
+}
+
+/*
+*  Skills
+*---------------------------------------------------------------------------------------------------
+*/
+
+.skills {
+  background-color: white;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skill-html,
+.skill-css,
+.skill-js {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 120px;
+  width: 120px;
+  border: 6px solid #cccccc;
+  border-radius: 50%;
+  background-color: #363636;
+}
+
+.html,
+.css,
+.js {
+  color: white;
+  display: inline;
+  font-size: 2em;
+}
+/*
+* Projects
+*---------------------------------------------------------------------------------------------------
+*/
+.about-tittle {
+  color: white;
+  padding: 10px;
+  font-size: 1.5em;
+  margin-left: 30px;
+  text-transform: capitalize;
+  border-left: 3px solid white;
+}
+.about {
+  background-color: #363636;
+  padding: 10px;
+}
+.about-container {
+  display: flex;
+  margin: 20px 0;
+}
+.about-description-box {
+  width: 50%;
+  height: 200px;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff30;
+  border-radius: 10px;
+}
+.about-description {
+  display: inherit;
+  align-items: center;
+  margin: 10px;
+  margin-top: 0;
+  font-size: 1.2em;
+}
+.about-image-container {
+  margin: 0 5%;
+  display: inline-block;
+  justify-content: center;
+  flex-shrink: 1;
+}
+.about-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+* Projects
+*---------------------------------------------------------------------------------------------------
+*/
+/* .project-tittle-box {    SEARCH ONE SOLUTION!
+  background-color: white;
+  width: 1000px;
+  height: 20px;
+} */
+.project-container-box {
+  background-color: white;
+  height: auto;
+  justify-content: center;
+  display: flex;
+}
+.project-container {
+  display: flex; /*The tag "span" did have a display inline*/
+  flex-wrap: wrap; /*This always is used for element's father*/
+  max-width: 1000px;
+  height: auto;
+  justify-content: center;
+  margin: 20px 0;
+  padding-left: 15px;
+}
+.project {
+  height: 350px;
+  width: 47%;
+  /* box-shadow: 0px 0px 2px 1px black; */
+  border: 1px solid black;
+  display: inherit;
+  flex-shrink: 0;
+  background-color: #00000033;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 312px;
+}
+.project-tittle-box {
+  background-color: white;
+  /* height: 60px; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.project-general-tittle {
+  color: #363636;
+  top: auto;
+  font-size: 1.7em;
+  margin: 15px auto 15px 40px;
+}
+
+.project-image-wrapper {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+.project-image {
+  width: 100%;
+}
+.project-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 40px;
+  margin-top: -40px;
+  background-color: white;
+  box-shadow: 0px 2px 4px -3px black;
+}
+.project-tittle {
+  color: #363636;
+  text-align: center;
+  margin: 16px 30px;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  font-family: sans-serif;
+}
+.project-description {
+  margin: 10px 20px;
+  text-align: center;
+}
+
+/*
+* contact
+*---------------------------------------------------------------------------------------------------
+*/
+
+#contact {
+  display: flex;
+  height: auto;
+  background-color: rgb(54, 54, 54);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.contact-tittle {
+  margin: 10px 0;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  letter-spacing: -0.3px;
+}
+.form-email {
+  justify-content: center;
+  padding: 10px;
+}
+#email {
+  height: 20px;
+  width: 200px;
+  /* text-align: center; This is the form to align the text "placeholder" */
+}
+.contact-button {
+  padding: 10px 50px;
+  border-radius: 5px;
+  margin: 10px;
+  margin-left: 0;
+  display: block;
+  right: 10px;
+  background-color: #5a3cff;
+  color: white;
+  border: 1px solid white;
+}
+
+.social {
+  font-size: 2em;
+  letter-spacing: 5px;
+}
+
+/*
+* footer
+*---------------------------------------------------------------------------------------------------
+*/
+
+.footer {
+  /*What is it?*/
+  background-color: black;
+  height: 50px;
+  color: white;
+}
+.footer-text {
+  text-align: end;
+  position: relative;
+  top: 10px;
+  margin-right: 20px;
+}
+
+/*
+* Media queries
+*---------------------------------------------------------------------------------------------------
+*/
+
+@media screen and (max-width: 1023px) {
+  body {
+    padding: 0;
+    background-color: white;
+  }
+  .document-container-down {
+    overflow: visible;
+  }
+}
+@media screen and (max-width: 767px) {
+  /*
+  *  BURGER and MENU ++
+  *-------------------------------------------------------------------------------------------------------
+  */
+  ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .link,
+  .link-border {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  .burger-menu {
+    position: fixed;
+    z-index: 20;
+    top: 3.5vh;
+    right: 30px;
+    /* float: left; */
+  }
+  .icon-menu {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    height: 55px;
+    width: 55px;
+    background: rgba(90, 60, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(90, 60, 255, 0.8);
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    transition: 0.3s;
+  }
+  .activeMode {
+    right: 0vw;
+  }
+  h1 {
+    position: relative;
+    bottom: 25px;
+    margin: 0 20px;
+  }
+  body {
+    padding: 0;
+  }
+  .header {
+    height: auto;
+  }
+  .document-container-down {
+    border-radius: 0;
+  }
+  .hero-tittle-box {
+    width: 100%;
+  }
+  .hero-photo-wrapper {
+    display: none;
+  }
+  .project-container {
+    padding: 0;
+    margin: 0;
+  }
+  .project-general-tittle {
+    margin: 20px auto 20px 40px;
+  }
+  .project {
+    width: 90%;
+    margin: 10px 0;
+  }
+  .project-image-wrapper {
+    height: 60%;
+  }
+  .project-image {
+    width: 100%;
+    object-position: 25% 25%;
+  }
+  .project-description {
+    font-size: 1.12em;
+  }
+  .document-container-down {
+    width: 100vw;
+    height: auto;
+  }
+}
+@media screen and (max-width: 611px) {
+  .about-description {
+    font-size: 15px;
+  }
+  .project-general-tittle {
+    margin: 20px auto;
+    font-size: 1.9em;
+  }
+  .project-detail {
+    margin: 40px;
+    margin-top: -40px;
+  }
+  #contact {
+    display: block;
+    padding: 20px 0;
+  }
+  .contact-tittle {
+    font-size: 1.8em;
+    margin: 15px 0;
+  }
+  .form-email {
+    margin: auto;
+    text-align: center;
+  }
+  #email {
+    width: 300px;
+    height: 35px;
+    font-size: 18px;
+  }
+  .contact-button {
+    margin: 13px auto;
+    padding: 10px 75px;
+    font-size: 18px;
+  }
+  .social {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.1em;
+  }
+  .skills {
+    height: 160px;
+  }
+  .skill-html,
+  .skill-css,
+  .skill-js {
+    width: 80px;
+    height: 80px;
+  }
+  .about {
+    padding: 30px 10px;
+  }
+  .about-container {
+    display: block;
+  }
+  .about-tittle {
+    font-size: 1.5em;
+  }
+  .about-description-box {
+    width: auto;
+    margin: 0 30px;
+    height: auto;
+  }
+  .about-description {
+    font-size: 19px;
+  }
+  .about-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border: 0px 1px 0px 1px solid white;
+  }
+  .project-general-tittle {
+    font-size: 1.6em;
+  }
+  .project-detail {
+    height: 50%;
+    margin: 20px;
+    margin-top: -20%;
+  }
+  #email {
+    width: 250px;
+    height: 30px;
+    font-size: 16px;
+  }
+  .contact-tittle {
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .contact-button {
+    padding: 10px 55px;
+  }
+}
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.9em;
+    margin: 0 10px;
+  }
+  .hero-tittle-two {
+    background-color: #cccccc;
+    font-size: 1.3em;
+    font-family: cursive;
+    font-weight: 100;
+  }
+  .project {
+    width: 100%;
+    background-color: white;
+    box-shadow: initial;
+    margin: 0;
+  }
+  .project-general-tittle {
+    margin: 40px auto;
+  }
+  .project-tittle-box {
+    height: auto;
+  }
+  .project-detail {
+    box-shadow: 0px 2px 4px -3px black;
+  }
+  .about-description-box {
+    margin: 0;
+  }
+}
